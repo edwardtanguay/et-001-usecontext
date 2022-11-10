@@ -62,4 +62,27 @@ body {
 			}
 		}
 	}
+
+	.pageFlashcards {
+		.flashcards {
+			.flashcard {
+				background-color: #222;
+				margin-bottom: 1rem;
+				padding: 1rem;
+				width: 39rem;
+				border-radius: .5rem;
+
+				.front {
+					font-size: 1.2rem;
+					margin-bottom: 1rem;
+					color: rgb(219, 198, 160);
+				}
+
+				.back {
+					color: brown;
+					font-size: 1.1rem;
+				}
+			}
+		}
+	}
 }
