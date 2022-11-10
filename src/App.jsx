@@ -3,11 +3,16 @@ import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
 import { PageWelcome } from './components/PageWelcome';
 import { PageBooks } from './components/PageBooks';
 import { PageFlashcards } from './components/PageFlashcards';
+import { useContext } from 'react';
+import { AppContext } from './AppContext';
+// import { IAppContext } from './AppContext';
 
 function App() {
+// const { appTitle } = useContext<IAppContext | null>(AppContext) as IAppContext;
+const { appTitle } = useContext(AppContext);
 	return (
 		<div className="App">
-			<h1>Study Group Site</h1>
+			<h1>{appTitle}</h1>
 			<nav>
 				<NavLink to="/welcome">Welcome</NavLink>
 				<NavLink to="/books">Books</NavLink>
