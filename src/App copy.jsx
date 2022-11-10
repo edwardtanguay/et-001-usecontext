@@ -5,8 +5,10 @@ import { PageBooks } from './components/PageBooks';
 import { PageFlashcards } from './components/PageFlashcards';
 import { useContext } from 'react';
 import { AppContext } from './AppContext';
+// import { IAppContext } from './AppContext';
 
 function App() {
+// const { appTitle } = useContext<IAppContext | null>(AppContext) as IAppContext;
 const { appTitle } = useContext(AppContext);
 	return (
 		<div className="App">
